@@ -1,6 +1,7 @@
 package com.main.project2.DAL;
 
 import com.main.project2.DAL.model.nganh;
+import com.main.project2.DAL.model.thanhvien;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
@@ -11,6 +12,24 @@ public class nganhDAL {
     {
         Session session = HibernateUtil.getSessionFactory().openSession();
         return session;
+    }
+
+    public boolean add(nganh n) {
+        Session session = openNewSession();
+        try {
+            session.beginTransaction();
+            session.persist(n);
+            session.getTransaction().commit();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            session.getTransaction().rollback();
+            return false;
+        } finally {
+            if (session.isOpen()) {
+                session.close();
+            }
+        }
     }
 
     public List<nganh> getAll(){

@@ -1,12 +1,13 @@
 package com.main.project2.BLL;
 
 import com.main.project2.DAL.model.nganh;
+import com.main.project2.DAL.nganhDAL;
 
 import java.util.List;
 
 public class nganhBLL {
 
-    private nganhBLL nganhDAO = new nganhBLL();
+    private nganhDAL nganhDAO = new nganhDAL();
 
     public List<nganh> getAll(){
         return nganhDAO.getAll();
