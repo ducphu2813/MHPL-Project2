@@ -17,6 +17,7 @@ public class TestFunction {
 //        kiemTraVao(3122120002L);
 //        System.out.println("kiểm tra id "+3123090004L);
 //        kiemTraVao(3123090004L);
+        deleteThanhvien();
     }
 
     public static void thucHienChoMuon(Long idTv, int idTb){
@@ -143,5 +144,10 @@ public class TestFunction {
 
     public static void thongKeVao(){
 
+    }
+
+    public static void deleteThanhvien(){
+        thanhvienBLL tvBUS = new thanhvienBLL();
+        tvBUS.deleteById(3123090004L);
     }
 }

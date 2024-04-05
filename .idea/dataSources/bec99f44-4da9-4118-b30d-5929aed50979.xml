@@ -1089,7 +1089,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="297" parent="1" name="project2">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-04-04.08:45:04</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-05.13:44:37</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="298" parent="1" name="learnspring">
@@ -1255,7 +1255,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="334" parent="307" name="id">
-      <AutoIncrement>4</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1280,7 +1280,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="339" parent="308" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>3</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1294,11 +1294,11 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>3</Position>
     </column>
     <column id="342" parent="308" name="ngaymuon">
-      <DasType>date|0s</DasType>
+      <DasType>datetime(6)|0s</DasType>
       <Position>4</Position>
     </column>
     <column id="343" parent="308" name="ngaytra">
-      <DasType>date|0s</DasType>
+      <DasType>datetime(6)|0s</DasType>
       <Position>5</Position>
     </column>
     <foreign-key id="344" parent="308" name="thongtin_sudung_ibfk_1">
@@ -1340,7 +1340,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>2</Position>
     </column>
     <column id="352" parent="309" name="thoigian_vao">
-      <DasType>date|0s</DasType>
+      <DasType>datetime(6)|0s</DasType>
       <Position>3</Position>
     </column>
     <foreign-key id="353" parent="309" name="thongtin_vao_ibfk_1">
@@ -1363,7 +1363,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="357" parent="310" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1389,7 +1389,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>6</Position>
     </column>
     <column id="363" parent="310" name="ngay_xuly">
-      <DasType>datetime|0s</DasType>
+      <DasType>datetime(6)|0s</DasType>
       <Position>7</Position>
     </column>
     <column id="364" parent="310" name="trangthai">
