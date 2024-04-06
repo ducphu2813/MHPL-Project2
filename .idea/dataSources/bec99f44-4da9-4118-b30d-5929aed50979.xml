@@ -1089,7 +1089,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="297" parent="1" name="project2">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-04-05.13:44:37</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-04-06.00:30:27</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="298" parent="1" name="learnspring">
@@ -1119,158 +1119,156 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="304" parent="297" name="nganh">
+    <table id="304" parent="297" name="loai_thietbi">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="305" parent="297" name="thanhvien">
+    <table id="305" parent="297" name="nganh">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="306" parent="297" name="thanhvien_sequence">
+    <table id="306" parent="297" name="thanhvien">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="307" parent="297" name="thietbi">
+    <table id="307" parent="297" name="thanhvien_sequence">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="308" parent="297" name="thongtin_sudung">
+    <table id="308" parent="297" name="thietbi">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="309" parent="297" name="thongtin_vao">
+    <table id="309" parent="297" name="thongtin_sudung">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="310" parent="297" name="xuly">
+    <table id="310" parent="297" name="thongtin_vao">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="311" parent="303" name="id">
+    <table id="311" parent="297" name="xuly">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <column id="312" parent="303" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="312" parent="303" name="ten">
+    <column id="313" parent="303" name="ten">
       <DasType>varchar(50)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="313" parent="303" name="PRIMARY">
+    <index id="314" parent="303" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="314" parent="303" name="PRIMARY">
+    <key id="315" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="315" parent="304" name="id">
+    <column id="316" parent="304" name="id">
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="316" parent="304" name="ten">
-      <DasType>varchar(50)|0s</DasType>
+    <column id="317" parent="304" name="ten">
+      <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="317" parent="304" name="PRIMARY">
+    <index id="318" parent="304" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="318" parent="304" name="PRIMARY">
+    <key id="319" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="319" parent="305" name="id">
+    <column id="320" parent="305" name="id">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="321" parent="305" name="ten">
+      <DasType>varchar(50)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="322" parent="305" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="323" parent="305" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="324" parent="306" name="id">
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="320" parent="305" name="ten">
+    <column id="325" parent="306" name="ten">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="321" parent="305" name="id_khoa">
+    <column id="326" parent="306" name="id_khoa">
       <DasType>int|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="322" parent="305" name="id_nganh">
+    <column id="327" parent="306" name="id_nganh">
       <DasType>int|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="323" parent="305" name="sodienthoai">
-      <DasType>varchar(255)|0s</DasType>
+    <column id="328" parent="306" name="sodienthoai">
+      <DasType>char(10)|0s</DasType>
       <Position>5</Position>
     </column>
-    <foreign-key id="324" parent="305" name="thanhvien_ibfk_1">
+    <foreign-key id="329" parent="306" name="thanhvien_ibfk_1">
       <ColNames>id_khoa</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>khoa</RefTableName>
     </foreign-key>
-    <foreign-key id="325" parent="305" name="thanhvien_ibfk_2">
+    <foreign-key id="330" parent="306" name="thanhvien_ibfk_2">
       <ColNames>id_nganh</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>nganh</RefTableName>
     </foreign-key>
-    <index id="326" parent="305" name="PRIMARY">
+    <index id="331" parent="306" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="327" parent="305" name="id_khoa">
+    <index id="332" parent="306" name="id_khoa">
       <ColNames>id_khoa</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="328" parent="305" name="id_nganh">
+    <index id="333" parent="306" name="id_nganh">
       <ColNames>id_nganh</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="329" parent="305" name="PRIMARY">
+    <key id="334" parent="306" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="330" parent="306" name="name">
+    <column id="335" parent="307" name="name">
       <DasType>varchar(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="331" parent="306" name="num">
+    <column id="336" parent="307" name="num">
       <DasType>bigint|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="332" parent="306" name="PRIMARY">
-      <ColNames>name</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="333" parent="306" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="334" parent="307" name="id">
-      <AutoIncrement>3</AutoIncrement>
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="335" parent="307" name="ten">
-      <DasType>varchar(50)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="336" parent="307" name="mota">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>3</Position>
-    </column>
     <index id="337" parent="307" name="PRIMARY">
-      <ColNames>id</ColNames>
+      <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
@@ -1280,73 +1278,75 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="339" parent="308" name="id">
-      <AutoIncrement>3</AutoIncrement>
-      <DasType>int|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="340" parent="308" name="id_thanhvien">
-      <DasType>bigint|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="341" parent="308" name="id_thietbi">
-      <DasType>int|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="342" parent="308" name="ngaymuon">
-      <DasType>datetime(6)|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <column id="343" parent="308" name="ngaytra">
-      <DasType>datetime(6)|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <foreign-key id="344" parent="308" name="thongtin_sudung_ibfk_1">
-      <ColNames>id_thanhvien</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>thanhvien</RefTableName>
-    </foreign-key>
-    <foreign-key id="345" parent="308" name="thongtin_sudung_ibfk_2">
-      <ColNames>id_thietbi</ColNames>
-      <RefColNames>id</RefColNames>
-      <RefTableName>thietbi</RefTableName>
-    </foreign-key>
-    <index id="346" parent="308" name="PRIMARY">
-      <ColNames>id</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <index id="347" parent="308" name="id_thanhvien">
-      <ColNames>id_thanhvien</ColNames>
-      <Type>btree</Type>
-    </index>
-    <index id="348" parent="308" name="id_thietbi">
-      <ColNames>id_thietbi</ColNames>
-      <Type>btree</Type>
-    </index>
-    <key id="349" parent="308" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="350" parent="309" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="351" parent="309" name="id_thanhvien">
+    <column id="340" parent="308" name="ten">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="341" parent="308" name="mota">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="342" parent="308" name="id_loai">
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <foreign-key id="343" parent="308" name="thietbi_ibfk_1">
+      <ColNames>id_loai</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>loai_thietbi</RefTableName>
+    </foreign-key>
+    <index id="344" parent="308" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="345" parent="308" name="id_loai">
+      <ColNames>id_loai</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="346" parent="308" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="347" parent="309" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="348" parent="309" name="id_thanhvien">
       <DasType>bigint|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="352" parent="309" name="thoigian_vao">
-      <DasType>datetime(6)|0s</DasType>
+    <column id="349" parent="309" name="id_thietbi">
+      <DasType>int|0s</DasType>
       <Position>3</Position>
     </column>
-    <foreign-key id="353" parent="309" name="thongtin_vao_ibfk_1">
+    <column id="350" parent="309" name="ngaymuon">
+      <DasType>datetime|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="351" parent="309" name="ngaytra">
+      <DasType>datetime|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <foreign-key id="352" parent="309" name="thongtin_sudung_ibfk_1">
       <ColNames>id_thanhvien</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>thanhvien</RefTableName>
+    </foreign-key>
+    <foreign-key id="353" parent="309" name="thongtin_sudung_ibfk_2">
+      <ColNames>id_thietbi</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>thietbi</RefTableName>
     </foreign-key>
     <index id="354" parent="309" name="PRIMARY">
       <ColNames>id</ColNames>
@@ -1357,60 +1357,97 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <ColNames>id_thanhvien</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="356" parent="309" name="PRIMARY">
+    <index id="356" parent="309" name="id_thietbi">
+      <ColNames>id_thietbi</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="357" parent="309" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="357" parent="310" name="id">
-      <AutoIncrement>2</AutoIncrement>
+    <column id="358" parent="310" name="id">
+      <AutoIncrement>1</AutoIncrement>
       <DasType>int|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="358" parent="310" name="id_thanhvien">
+    <column id="359" parent="310" name="id_thanhvien">
       <DasType>bigint|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="359" parent="310" name="lydo">
-      <DasType>varchar(100)|0s</DasType>
+    <column id="360" parent="310" name="thoigian_vao">
+      <DasType>datetime|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="360" parent="310" name="hinhthuc_xl">
-      <DasType>varchar(100)|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <column id="361" parent="310" name="tienphat">
-      <DasType>double|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <column id="362" parent="310" name="songay_ban">
-      <DasType>int|0s</DasType>
-      <Position>6</Position>
-    </column>
-    <column id="363" parent="310" name="ngay_xuly">
-      <DasType>datetime(6)|0s</DasType>
-      <Position>7</Position>
-    </column>
-    <column id="364" parent="310" name="trangthai">
-      <DasType>tinyint(1)|0s</DasType>
-      <Position>8</Position>
-    </column>
-    <foreign-key id="365" parent="310" name="xuly_ibfk_1">
+    <foreign-key id="361" parent="310" name="thongtin_vao_ibfk_1">
       <ColNames>id_thanhvien</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>thanhvien</RefTableName>
     </foreign-key>
-    <index id="366" parent="310" name="PRIMARY">
+    <index id="362" parent="310" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="367" parent="310" name="id_thanhvien">
+    <index id="363" parent="310" name="id_thanhvien">
       <ColNames>id_thanhvien</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="368" parent="310" name="PRIMARY">
+    <key id="364" parent="310" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="365" parent="311" name="id">
+      <AutoIncrement>1</AutoIncrement>
+      <DasType>int|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="366" parent="311" name="id_thanhvien">
+      <DasType>bigint|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="367" parent="311" name="lydo">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="368" parent="311" name="hinhthuc_xl">
+      <DasType>varchar(100)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="369" parent="311" name="tienphat">
+      <DasType>double|0s</DasType>
+      <Position>5</Position>
+    </column>
+    <column id="370" parent="311" name="songay_ban">
+      <DasType>int|0s</DasType>
+      <Position>6</Position>
+    </column>
+    <column id="371" parent="311" name="ngay_xuly">
+      <DasType>datetime|0s</DasType>
+      <Position>7</Position>
+    </column>
+    <column id="372" parent="311" name="trangthai">
+      <DasType>tinyint(1)|0s</DasType>
+      <Position>8</Position>
+    </column>
+    <foreign-key id="373" parent="311" name="xuly_ibfk_1">
+      <ColNames>id_thanhvien</ColNames>
+      <RefColNames>id</RefColNames>
+      <RefTableName>thanhvien</RefTableName>
+    </foreign-key>
+    <index id="374" parent="311" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="375" parent="311" name="id_thanhvien">
+      <ColNames>id_thanhvien</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="376" parent="311" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

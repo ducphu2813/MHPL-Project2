@@ -1,5 +1,6 @@
 package com.main.project2.BLL;
 
+import com.main.project2.DAL.model.loai_thietbi;
 import com.main.project2.DAL.model.thietbi;
 import com.main.project2.DAL.thietbiDAL;
 
@@ -78,5 +79,16 @@ public class thietbiBLL {
             }
         }
         return null;
+    }
+
+    public void xoaTheoLoaiTb(loai_thietbi loai_tb){
+        List<thietbi> ds = getAll();
+        List<thietbi> dsXoa = new ArrayList<>();
+        for(thietbi tb : ds){
+            if(tb.getLoai_thietbi().getId().equals(loai_tb.getId())){
+                dsXoa.add(tb);
+            }
+        }
+        deleteList(dsXoa);
     }
 }

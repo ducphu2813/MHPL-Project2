@@ -27,6 +27,10 @@ public class thietbi {
     @Column(name = "mota")
     private String mota;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "id_loai")
+    private loai_thietbi loai_thietbi;
+
     @OneToMany(
             fetch = FetchType.LAZY,
             mappedBy = "thietbi",
