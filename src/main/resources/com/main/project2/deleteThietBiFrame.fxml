@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.project2.xoaTbController">
+   <children>
+      <Label layoutX="83.0" layoutY="53.0" text="Xóa theo điều kiện">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cbNganh" layoutX="96.0" layoutY="168.0" prefHeight="30.0" prefWidth="238.0" />
+      <ComboBox fx:id="cbKhoa" layoutX="96.0" layoutY="284.0" prefHeight="30.0" prefWidth="237.0" />
+      <Button fx:id="btnXoa" layoutX="83.0" layoutY="385.0" mnemonicParsing="false" onAction="#btnXoa_click" styleClass="btnThem" stylesheets="@css/crud.css" text="Xóa">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnHuy" layoutX="257.0" layoutY="385.0" mnemonicParsing="false" styleClass="btnHuy" stylesheets="@css/crud.css" text="Hủy">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="37.0" layoutY="124.0" text="Chọn loại thiết bị">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="242.0" text="Chọn mã số của thiết bị">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

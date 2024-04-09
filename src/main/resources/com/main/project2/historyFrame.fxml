@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.project2.historyController">
+   <children>
+      <VBox fx:id="boxTime" layoutX="50.0" layoutY="70.0" prefHeight="200.0" prefWidth="550.0">
+         <children>
+            <VBox fx:id="boxNgaymuon" prefHeight="88.0" spacing="10.0">
+               <children>
+                  <Label lineSpacing="6.0" prefHeight="38.0" prefWidth="206.0" text="Lọc theo ngày mượn:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="66.0" prefWidth="326.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="33.0" prefWidth="28.0" text="Từ:" />
+                        <DatePicker fx:id="dtpStartBr" prefHeight="32.0" prefWidth="218.0" promptText="Ngày bắt đầu" />
+                        <Label prefHeight="32.0" prefWidth="38.0" text="Đến:" />
+                        <DatePicker fx:id="dtpEndBr" promptText="Ngày kết thúc" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="boxNgayTra" prefHeight="88.0" prefWidth="530.0" spacing="10.0">
+               <children>
+                  <Label lineSpacing="6.0" prefHeight="38.0" prefWidth="206.0" text="Lọc theo ngày trả:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <HBox fx:id="dtpEndGb" prefHeight="66.0" prefWidth="326.0" spacing="20.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="28.0" text="Từ:" />
+                        <DatePicker fx:id="dtpStartGb" prefHeight="32.0" prefWidth="218.0" promptText="Ngày bắt đầu" />
+                        <Label prefHeight="32.0" prefWidth="38.0" text="Đến:" />
+                        <DatePicker promptText="Ngày kết thúc" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fx:id="boxDoituong" fillWidth="false" layoutX="646.0" layoutY="70.0" prefHeight="206.0" prefWidth="304.0">
+         <children>
+            <Label lineSpacing="6.0" prefHeight="38.0" prefWidth="222.0" text="Lọc theo đối tượng:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cbxDoituong" prefHeight="35.0" prefWidth="224.0" promptText="Chọn người mượn/thiết bị">
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </ComboBox>
+            <TextField fx:id="txtDoituong" prefHeight="35.0" prefWidth="279.0" promptText="Nhập thông tin">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <Pane layoutX="50.0" layoutY="262.0" prefHeight="418.0" prefWidth="900.0">
+         <children>
+            <TableView fx:id="tbLichsu" prefHeight="404.0" prefWidth="900.0" stylesheets="@css/thanhvien.css" tableMenuButtonVisible="true">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Mã thiết bị" />
+                  <TableColumn prefWidth="75.0" text="Tên" />
+                  <TableColumn prefWidth="75.0" text="Mô tả" />
+                  <TableColumn prefWidth="75.0" text="Người mượn" />
+                  <TableColumn prefWidth="75.0" text="Ngày mượn" />
+                  <TableColumn prefWidth="75.0" text="Ngày trả" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

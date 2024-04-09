@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="469.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.project2.addXulyController">
+   <children>
+      <VBox layoutX="486.0" layoutY="45.0" prefHeight="306.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <Label text="Lý do:" />
+            <TextField fx:id="txtLydo" prefHeight="40.0" />
+            <Label text="Hình thức xử lý:" />
+            <TextField fx:id="txtHinhthuc" prefHeight="40.0" />
+            <GridPane>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label text="Số ngày xử phạt:" />
+                  <DatePicker fx:id="dtpNgayxp" prefHeight="40.0" prefWidth="163.0" GridPane.rowIndex="1" />
+                  <Label text="Số tiền bị phạt:" GridPane.columnIndex="1" />
+                  <TextField fx:id="txtTienphat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" top="40.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="50.0" layoutY="55.0" prefHeight="400.0" prefWidth="400.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txtMatv" alignment="CENTER" prefHeight="40.0" promptText="Nhập mã thành viên">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" top="-20.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Tên thành viên :" />
+            <TextField fx:id="txtTen" prefHeight="40.0" prefWidth="365.0" promptText="Tên" />
+            <Label text="Khoa:" />
+            <TextField fx:id="txtKhoa" prefHeight="40.0" prefWidth="365.0" promptText="Khoa" />
+            <Label text="Ngành:" />
+            <TextField fx:id="txtNganh" prefHeight="40.0" prefWidth="365.0" promptText="Ngành" />
+            <Label text="Số điện thoại:" />
+            <TextField fx:id="txtSdt" prefHeight="40.0" prefWidth="365.0" promptText="Số điện thoại" />
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="btnXacnhan" alignment="CENTER" layoutX="686.0" layoutY="363.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="180.0" styleClass="btnCheck" stylesheets="@css/crud.css" text="Xác nhận" />
+   </children>
+</AnchorPane>

@@ -5,6 +5,7 @@ import com.main.project2.DAL.khoaDAL;
 import com.main.project2.DAL.loai_thietbiDAL;
 import com.main.project2.DAL.model.*;
 import com.main.project2.DAL.nganhDAL;
+import com.main.project2.DAL.thanhvien_sequenceDAL;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +13,15 @@ import java.util.List;
 public class LoadData {
 
     public static void main(String[] args) {
+
+        //load dữ liệu cho thanhvien_sequence(cái này quan trọng)
+        thanhvien_sequenceDAL sequenceDAL = new thanhvien_sequenceDAL();
+        thanhvien_sequence sequence = new thanhvien_sequence();
+
+        sequence.setName("index");
+        sequence.setNum(1L);
+        sequenceDAL.add(sequence);
+
 
         //load dữ liệu cho khoa và ngành
 //        khoaDAL khoaDAO = new khoaDAL();

@@ -11,6 +11,26 @@ public class thanhvien_sequenceDAL {
         return session;
     }
 
+    public boolean add(thanhvien_sequence sequence){
+        Session session = openNewSession();
+        try{
+            session.beginTransaction();
+            session.persist(sequence);
+            session.getTransaction().commit();
+            return true;
+        }
+        catch (Exception e){
+            e.printStackTrace();
+            session.getTransaction().rollback();
+            return false;
+        }
+        finally {
+            if (session.isOpen()) {
+                session.close();
+            }
+        }
+    }
+
     public Long getCurrentIndex()
     {
         Session session = openNewSession();

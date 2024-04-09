@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.project2.thietbiController">
+   <children>
+      <AnchorPane layoutX="28.0" layoutY="37.0" prefHeight="164.0" prefWidth="950.0" styleClass="crudPanel" stylesheets="@css/thietbi.css">
+         <children>
+            <Button id="btn" fx:id="btnXoadk" layoutX="732.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnXoadk_click" stylesheets="@css/thietbi.css" text="Xoá theo điều kiện" />
+            <Button id="btn" fx:id="btnThem" layoutX="269.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnThem_click" stylesheets="@css/thietbi.css" text="Thêm 1 thiết bị" />
+            <Button id="btn" fx:id="btnExcel" layoutX="499.0" layoutY="22.0" mnemonicParsing="false" onAction="#btnExcel_click" stylesheets="@css/thietbi.css" text="Import excel" />
+            <Button id="btn" fx:id="btnMuon" layoutX="499.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnMuon_click" stylesheets="@css/thietbi.css" text="Mượn thiết bị" />
+            <Button id="btn" fx:id="btnTra" layoutX="732.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnTra_click" stylesheets="@css/thietbi.css" text="Trả thiết bị" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="28.0" layoutY="250.0" prefHeight="437.0" prefWidth="950.0" styleClass="crudPanel" stylesheets="@css/thietbi.css">
+         <children>
+            <TabPane layoutY="-31.0" prefHeight="464.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="tabAll" text="Tất cả">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableAll" layoutX="78.0" layoutY="33.0" prefHeight="369.0" prefWidth="795.0">
+                                <columns>
+                                  <TableColumn prefWidth="81.0" text="Mã thiết bị" />
+                                  <TableColumn prefWidth="144.0" text="Tên" />
+                                    <TableColumn minWidth="0.0" prefWidth="120.0" text="Mô tả" />
+                                    <TableColumn prefWidth="133.0" text="Trạng thái" />
+                                    <TableColumn minWidth="0.0" prefWidth="168.0" text="Người mượn" />
+                                    <TableColumn minWidth="0.0" prefWidth="147.0" text="Ngày mượn" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab fx:id="tabMuon" text="Đang được mượn">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableMuon" layoutX="78.0" layoutY="33.0" prefHeight="369.0" prefWidth="795.0">
+                                 <columns>
+                                    <TableColumn prefWidth="81.0" text="Mã thiết bị" />
+                                    <TableColumn prefWidth="144.0" text="Tên" />
+                                    <TableColumn minWidth="0.0" prefWidth="120.0" text="Mô tả" />
+                                    <TableColumn prefWidth="133.0" text="Trạng thái" />
+                                    <TableColumn minWidth="0.0" prefWidth="168.0" text="Người mượn" />
+                                    <TableColumn minWidth="0.0" prefWidth="147.0" text="Ngày mượn" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tabranh" text="Thiết bị rảnh">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableRanh" layoutX="78.0" layoutY="33.0" prefHeight="369.0" prefWidth="795.0">
+                                 <columns>
+                                    <TableColumn prefWidth="81.0" text="Mã thiết bị" />
+                                    <TableColumn prefWidth="144.0" text="Tên" />
+                                    <TableColumn minWidth="0.0" prefWidth="120.0" text="Mô tả" />
+                                    <TableColumn prefWidth="133.0" text="Trạng thái" />
+                                    <TableColumn minWidth="0.0" prefWidth="168.0" text="Người mượn" />
+                                    <TableColumn minWidth="0.0" prefWidth="147.0" text="Ngày mượn" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

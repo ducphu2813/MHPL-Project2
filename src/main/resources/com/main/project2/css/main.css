@@ -1,0 +1,32 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.main{
+	 -fx-background-color: white; /* Màu đen */
+    -fx-min-width: 1200px; /* Chiều rộng */
+    -fx-min-height: 720px; /* Chiều cao */
+}
+.leftmenu{
+	-fx-background-color: white;
+	 -fx-min-width: 200px; /* Chiều rộng */
+	 
+}
+.logo{
+	-fx-background-color: #7DB18E;
+}
+
+#btnMenu{
+	-fx-background-radius: 30;
+    -fx-background-color: #7DB18E;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 8 16;
+    -fx-border-radius: 30;
+    -fx-border-color: #7DB18E;
+    -fx-min-width: 180px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+#btnMenu:hover {
+    -fx-background-color: rgba(55, 255, 0, 0.38); /* Màu nền khi hover */
+    -fx-border-color: #ffffff; /* Màu viền khi hover */
+}

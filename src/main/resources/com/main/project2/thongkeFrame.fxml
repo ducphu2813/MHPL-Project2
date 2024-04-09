@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1000.0" stylesheets="@css/thanhvien.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.project2.thongkeController">
+   <children>
+      <TabPane prefHeight="720.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Số lượng thành viên vào khu học tập">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <BarChart fx:id="barChart" layoutX="32.0" layoutY="176.0" prefHeight="469.0" prefWidth="934.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <ComboBox fx:id="cbKhoa" layoutX="179.0" layoutY="121.0" prefHeight="25.0" prefWidth="242.0" promptText="Chọn khoa" />
+                        <ComboBox fx:id="cbNganh" layoutX="561.0" layoutY="121.0" prefHeight="25.0" prefWidth="242.0" promptText="Chọn ngành" />
+                        <ComboBox fx:id="cbNam" layoutX="689.0" layoutY="47.0" prefHeight="25.0" prefWidth="242.0" promptText="Năm" />
+                        <Label layoutX="31.0" layoutY="20.0" text="Thống kê theo">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="rdAll1" layoutX="49.0" layoutY="59.0" mnemonicParsing="false" selected="true" text="Tất cả">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="group1" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rdKhoa" layoutX="126.0" layoutY="59.0" mnemonicParsing="false" text="Khoa" toggleGroup="$group1" />
+                        <RadioButton fx:id="rdNganh" layoutX="202.0" layoutY="59.0" mnemonicParsing="false" text="Ngành" toggleGroup="$group1" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Vi phạm">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="35.0" layoutY="14.0" text="Lọc theo trạng thái">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtMa" layoutX="190.0" layoutY="122.0" />
+                        <Label layoutX="48.0" layoutY="126.0" text="Nhập mã thành viên" />
+                        <TableView fx:id="tableVipham" layoutX="35.0" layoutY="190.0" prefHeight="425.0" prefWidth="898.0">
+                          <columns>
+                            <TableColumn prefWidth="109.0" text="Thành viên" />
+                            <TableColumn prefWidth="134.0" text="Lý do" />
+                              <TableColumn prefWidth="153.0" text="Hình thức xử lý" />
+                              <TableColumn prefWidth="102.0" text="Tiền phạt" />
+                              <TableColumn prefWidth="112.0" text="Ngày xử lý" />
+                              <TableColumn prefWidth="143.0" text="Số ngày bị phạt" />
+                              <TableColumn prefWidth="141.0" text="Trạng thái" />
+                          </columns>
+                        </TableView>
+                        <RadioButton fx:id="rdAll2" layoutX="48.0" layoutY="56.0" mnemonicParsing="false" selected="true" text="Tất cả">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="group2" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rddaxuly" layoutX="153.0" layoutY="56.0" mnemonicParsing="false" text="Đã xử lý" toggleGroup="$group2" />
+                        <RadioButton fx:id="rdchuaxuly" layoutX="265.0" layoutY="56.0" mnemonicParsing="false" text="Chưa xử lý" toggleGroup="$group2" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

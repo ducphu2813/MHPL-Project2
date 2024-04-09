@@ -1,0 +1,30 @@
+
+.btnThem{
+    -fx-background-color: #7DB18E;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 8 16;
+    -fx-min-width: 100px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+.btnHuy{
+    -fx-background-color: rgba(255, 0, 0, 0.44);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 8 16;
+    -fx-min-width: 100px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+.btnCheck{
+    -fx-background-color: #7DB18E;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 8 16;
+    -fx-min-width: 100px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="577.0" prefWidth="400.0" stylesheets="@css/crud.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.project2.checkBanController">
+   <children>
+      <Label layoutX="152.0" layoutY="47.0" text="Kiểm tra">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMa" layoutX="112.0" layoutY="116.0" prefHeight="30.0" prefWidth="199.0" text="Nhập mã thành viên">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTen" layoutX="113.0" layoutY="175.0" prefHeight="30.0" prefWidth="199.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="45.0" layoutY="177.0" text="Tên">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="241.0" text="Khoa">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="305.0" text="Ngành">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="367.0" text="SDT">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtKhoa" layoutX="113.0" layoutY="239.0" prefHeight="26.0" prefWidth="199.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNganh" layoutX="113.0" layoutY="303.0" prefHeight="26.0" prefWidth="199.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSdt" layoutX="113.0" layoutY="365.0" prefHeight="26.0" prefWidth="199.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnCheck" layoutX="150.0" layoutY="438.0" mnemonicParsing="false" onAction="#btnCheckOnAction" styleClass="btnCheck" text="Kiểm tra" />
+   </children>
+</AnchorPane>

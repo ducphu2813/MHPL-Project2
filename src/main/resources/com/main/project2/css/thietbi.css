@@ -1,0 +1,53 @@
+.crudPanel{
+    -fx-border-radius: 10;
+    -fx-border-width: 2px;
+    -fx-border-color: #7DB18E;
+}
+#btn{
+    -fx-background-radius: 10;
+    -fx-background-color: #7DB18E;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 8 16;
+    -fx-border-radius: 10;
+    -fx-border-color: #7DB18E;
+    -fx-min-width: 180px;
+    -fx-alignment: center;
+    -fx-font-weight: bold;
+}
+
+#btn:hover{
+    -fx-background-color: rgba(55, 255, 0, 0.38); /* Màu nền khi hover */
+}
+
+.tablePanel{
+    -fx-border-radius: 10;
+    -fx-border-width: 2px;
+    -fx-background-color: rgba(55, 255, 0, 0.38);
+}
+
+.table-view{
+    -fx-padding:0px;
+    -fx-background-color:transparent;
+    -fx-border-color:linear-gradient(to bottom right,#7DB18E,#7DB18E);
+    -fx-border-radius:8px;
+    -fx-border-width:2px;
+}
+
+.table-view .column-header{
+    -fx-alignment:CENTER;
+}
+
+.table-view .column-header-background{
+    -fx-background-color:linear-gradient(to bottom right,#7DB18E,#7DB18E);
+    -fx-background-radius:8px 8px 0 0;
+    -fx-padding:0;
+}
+.table-view .column-header, filter{
+    -fx-background-color:transparent;
+    -fx-size:30px;
+}
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+}
